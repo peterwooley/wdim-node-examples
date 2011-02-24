@@ -1,0 +1,12 @@
+- if(msgs)
+	ul
+		- each val, key in msgs
+			li(class:key) #{val}
+		
+form(method:'post')
+	- if(name)
+		input(type:'hidden', value:'put', name:'_method')
+	label(for:'name') Name
+		input(name:'name', value:name)
+	input(type:'submit', value:label)
+
