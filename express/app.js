@@ -3,7 +3,7 @@ var express = require('express'),
 
 // The port the server will use.
 // Set this to usable port number to run the example.
-var port = 4000;
+var port;
 
 // Path to our public directory
 var pub = __dirname + '/public';
